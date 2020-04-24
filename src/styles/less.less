@@ -1,0 +1,56 @@
+@color0: black;
+@color1: brown;
+@color2: saddlebrown;
+@color3: darkblue;
+@color4: white;
+
+.reset {
+    margin: 0
+}
+
+.margin-bottom {
+    margin-bottom: 12px;
+}
+
+.background(@background-color: @color3) {
+    background-color: @background-color;
+}
+
+.font-size(@font-size) {
+    font-size: @font-size;
+}
+
+.less {
+    color: @color1;
+    text-align: center;
+    padding-bottom: 48px;
+
+    h2 {
+        font-style: italic;
+        .font-size(48px);
+        .reset;
+        .margin-bottom;
+    }
+
+    .text {
+        display: inline-block;
+
+        p {
+            background-color: @color2;
+            color: @color0;
+            text-align: center;
+            .font-size(36px);
+            .reset;
+            .margin-bottom;
+        }
+
+        span {
+            .background;
+            .font-size(24px);
+
+            &:hover {
+                color: @color4;
+            }
+        }
+    }
+}

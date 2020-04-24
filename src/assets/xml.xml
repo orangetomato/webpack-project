@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<email>
+    <to>Artyom</to>
+    <from>Webpack</from>
+    <subject>Learning</subject>
+    <body>You will never learn me!</body>
+</email>
